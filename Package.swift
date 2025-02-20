@@ -8,7 +8,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"),
         .package(url: "https://github.com/kylef/PathKit", from: "1.0.1"),
-        .package(url: "https://github.com/mtynior/ColorizeSwift.git", from: "1.7.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -17,8 +16,7 @@ let package = Package(
             name: "tree-swift",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                .product(name: "PathKit", package: "PathKit"),
-                .product(name: "ColorizeSwift", package: "ColorizeSwift")
+                .product(name: "PathKit", package: "PathKit")
             ]
         ),
     ]
