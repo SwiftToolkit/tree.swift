@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "tree.swift",
+    products: [
+        .executable(name: "tree", targets: ["tree-swift"])
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"),
         .package(url: "https://github.com/kylef/PathKit", from: "1.0.1"),
